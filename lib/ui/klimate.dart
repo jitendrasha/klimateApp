@@ -38,7 +38,7 @@ class _KlimateState extends State<Klimate> {
           ),
           new Container(
             alignment:Alignment.center,
-            margin:  EdgeInsets.fromLTRB(30.0, 290, 0.0, 0.0)
+            margin:  EdgeInsets.fromLTRB(30.0, 290, 0.0, 0.0),
             child: new Image.asset('images/light_rain.png'),
 
           ), 
