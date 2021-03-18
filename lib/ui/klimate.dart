@@ -1,5 +1,8 @@
+import 'dart:async';
+import 'dart:convert';
+import 'package:http/http.dart' as http;
 import "package:flutter/material.dart";
-
+import '../utils/utils.dart' as util; 
 class Klimate extends StatefulWidget {
   @override
   _KlimateState createState() => _KlimateState();
@@ -54,7 +57,17 @@ class _KlimateState extends State<Klimate> {
       ),
     );
   }
-} 
+  Future<Map> getWeather(String appId, String city)async{
+    String apiUrl= Uri.parse("api.openweathermap.org/data/2.5/weather?q=$city&appid=${util.appId}&units=imperail");
+
+    http.Response response= await http.get(apiUrl);
+    return jsonDecode(response.body) as Map;
+
+  }
+}
+ 
+
+
 /*
 
 TextStyle cityStyle(){
