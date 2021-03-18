@@ -1,6 +1,0 @@
-8cdb4db6ad3d13897f62c8f534b7c1ee 
-
-
-API keys for weather map
-8cdb4db6ad3d13897f62c8f534b7c1ee 
-api.openweathermap.org/data/2.5/weather?q=porto&appid=8cdb4db6ad3d13897f62c8f534b7c1ee&units=matric 
